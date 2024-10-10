@@ -1,0 +1,29 @@
+<div class="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex flex-col">
+  <div class="absolute inset-0 bg-pattern opacity-10"></div>
+  <header class="relative bg-white bg-opacity-90 shadow-md">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-indigo-900 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-2 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <polyline points="21 15 16 10 5 21"></polyline>
+        </svg>
+        {{ title }}
+      </h1>
+      <nav>
+        <a href="#" class="text-indigo-600 hover:text-indigo-900 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-900 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="relative flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <app-image-input></app-image-input>
+  </main>
+
+  <footer class="relative bg-white bg-opacity-90">
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center text-indigo-600">
+      <p>&copy; 2023 AI Image Description Generator. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
