@@ -1,7 +1,7 @@
 <div class="flex flex-col md:flex-row gap-6">
   <div class="w-full md:w-1/2 bg-white shadow-xl rounded-lg overflow-hidden backdrop-blur-lg bg-opacity-80">
     <div class="p-6">
-      <h2 class="text-3xl font-bold mb-6 text-indigo-800">Generate Image Description</h2>
+      <h2 class="text-3xl font-bold mb-6 text-indigo-800">Generate title and description for your ads</h2>
       <div class="mb-6">
         <label for="image-upload" class="block text-indigo-700 text-sm font-bold mb-2">Upload an image:</label>
         <div class="flex items-center justify-center w-full">
@@ -39,16 +39,16 @@
         </div>
       </div>
       <button (click)="generateDescription()" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
-        Generate Description
+        Do your magic
       </button>
     </div>
   </div>
 
   <div class="w-full md:w-1/2 bg-white shadow-xl rounded-lg overflow-hidden backdrop-blur-lg bg-opacity-80">
     <div class="p-6">
-      <h2 class="text-3xl font-bold mb-6 text-indigo-800">AI Output</h2>
+      <h2 class="text-3xl font-bold mb-6 text-indigo-800">Results</h2>
       <div *ngIf="Object.keys(aiOutput).length === 0" class="text-indigo-600">
-        No descriptions generated yet. Select languages and click "Generate Description" to see the output here.
+        No descriptions generated yet. Select all inputs to see the output here.
       </div>
       <div *ngFor="let lang of selectedLanguages" class="mb-4">
         <h3 class="text-xl font-semibold text-indigo-700 mb-2">{{lang}}</h3>
